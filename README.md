@@ -32,3 +32,7 @@ ComicVerse is a web-based comic store where you can explore a vast collection of
 ![Screenshot 2023-10-29 230110](https://github.com/its-vam/Comic-Verse/assets/149049069/6c4cb242-3012-424c-8466-1a75f18011cf)
 
 
+![Screenshot 2023-10-29 230316](https://github.com/its-vam/Comic-Verse/assets/149049069/8cde30ee-c8cb-4884-95aa-5421a67daac3)
+
+
+
