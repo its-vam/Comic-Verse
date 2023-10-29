@@ -29,3 +29,6 @@ ComicVerse is a web-based comic store where you can explore a vast collection of
 - **Search and Filters:** Easily find your favorite comics with search and filtering options.
 - **User-Friendly:** Designed with user experience in mind, making it simple and enjoyable to explore and purchase comics.
 
+![Screenshot 2023-10-29 230110](https://github.com/its-vam/Comic-Verse/assets/149049069/6c4cb242-3012-424c-8466-1a75f18011cf)
+
+
