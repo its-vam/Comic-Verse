@@ -1,0 +1,410 @@
+/*GLOBAL STYLES*/
+
+@font-face {
+	font-family: nevis;
+	src: url(fonts/nevis.ttf);
+}
+
+.skip-to-main {
+	position: fixed;
+	top: -200px;	
+}
+
+.skip-to-main:focus {
+	top: 5px;
+	background-color: white;
+}
+
+body {
+	background-color: white;
+	font-family: nevis, Gotham, sans-serif;
+	margin: 0;
+}
+
+.hide {
+	display: none;
+}
+
+
+#underline {
+	text-decoration: underline;
+}
+
+/*SMALL SCREEN STYLES*/
+
+/*-----header-----*/
+.store-name p {
+	display: none;
+}
+
+.pic-container {
+	height: 166px;
+	overflow: hidden;
+}
+
+.background-img {
+	background-image: url("../images/comic-book-faces.jpg");
+	height: 364px;
+    background-size: cover;
+}
+
+.background-img-about {
+	background-image: url("https://barkpost.com/wp-content/uploads/2015/06/dog-family-reunion-2.jpg");
+	background-size: cover;
+	height: 166px;
+}
+
+.small-nav-closed, .large-nav {
+	display: none;
+}
+
+.small-header {
+	height: 70px;
+}
+
+.hamburger-icon {
+    font-size: 39px;
+    margin-left: 16px;
+    position: relative;
+    bottom: 70px;
+}
+
+h1 {
+	text-align: center;
+	margin-top: 35px;
+	font-size: 40px;
+}
+
+.hero-img {
+	width: 100%;
+}
+
+
+
+/*-----open nav-----*/
+
+.small-nav-open {
+	animation-duration: .5s;
+	animation-name: slider;
+	animation-timing-function: ease-in-out;
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	padding: 20px;
+	position: fixed;
+	top: 0;
+	width: 170px;
+}
+
+@keyframes slider {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 170px;
+  } 
+}
+
+.small-nav-open a {
+	color: white;
+	text-decoration: none;
+	line-height: 2;
+	font-size: 30px;
+	animation-duration: .6s;
+	animation-name: fade-in;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  } 
+}
+
+.home-link {
+	margin-top: 10px;
+}
+
+.close-icon {
+	color: white;
+	display: block;
+    z-index: 1;
+    position: fixed;
+    top: 46px;
+    left: 164px;
+    font-size: 30px;
+}
+
+/*-----main-----*/
+
+main {
+	margin: 0 16px;
+}
+
+h2 {
+	margin-top: 27px;
+	font-size: 27px;
+	text-align: center;
+}
+
+.welcome-article p {
+	margin-top: 30px;
+}
+
+.coupon-article {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 168px;
+	border-top: 1px solid #979797;
+	border-bottom: 1px solid #979797;
+	margin-top: 40px;
+}
+
+.coupon-article p {
+	font-size: 20px;
+	text-align: center;
+}
+
+.coupon-article a {
+	margin-top: 10px;
+}
+
+/*styles all buttons*/
+.button {
+	background-color: black;
+	color: white;
+	font-size: 16px;
+	border: 2px solid black;
+	padding: 12.5px 46px;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+	border-radius: 3px;
+/*	margin-top: 10px;*/
+	font-family: nevis, Gotham, sans-serif;
+}
+
+.products section {
+	display: flex;
+	flex-direction: column;
+    margin: 43px auto 0;
+    max-width: 344px;
+    align-items: center;
+}
+
+.products img {
+	max-width: 215px;
+}
+
+h3 {
+	margin: 16px 4px;
+	font-size: 18px;
+    max-width: 215px;
+}
+
+/*-----newsletter form-----*/
+.newsletter-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+form {
+	width: 100%;
+}
+
+.form-name-fields {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 34px;
+}
+
+.form-name-fields div {
+	width: 50%;
+}
+
+.first-name {
+	margin-right: 14px;
+}
+
+.mc-field-group {
+	display: flex;
+}
+
+.form-name-fields input {
+	width: 100%;
+}
+
+input {
+	color: #989898;
+	font-family: nevis, Gotham, sans-serif;
+	font-size: 16px;
+	text-align: justify;
+	border: 2px solid black;
+	padding: 15px 19px;
+}
+
+.email {
+	margin-top: 23px;
+	width: 100%;
+}
+    
+.center-submit-button {
+    display: flex;
+    justify-content: center;
+}
+
+form .button {
+	margin-top: 36px;
+}
+
+.secure-info {
+	font-size: 12px;
+	color: #989898;
+	text-align: center;
+}
+
+form p {
+	color: red;
+}
+
+/*-----footer-----*/
+footer {
+    text-align: center;
+    width: 100%;
+    margin: 40px 0 10px;
+}
+
+
+@media only screen and (min-width: 480px) {
+	.store-name p {
+		display: inline;
+	    position: relative;
+	    top: -36px;
+	    left: 22px;
+	    font-size: 20px;
+	}
+
+	.hamburger-icon {
+		font-size: 0;
+	}
+
+	.large-nav {
+		display: flex;
+    	position: relative;
+    	top: -100px;
+    	justify-content: flex-end;
+    	width: 100%;
+	}
+
+	.large-nav a {
+		color: black;
+		text-decoration: none;
+		padding: 20px;
+		font-size: 24px;
+	}
+
+	h1 {
+    	text-align: left;
+    	padding-left: 20px;
+    	margin-top: 12px;
+    }
+
+	.home-link {
+		margin-top: 0;
+	}
+
+}
+
+@media only screen and (min-width: 480px) and (max-width: 759px) {
+	
+	.large-nav a {
+	    padding: 8px;
+	    font-size: 17px;
+	}
+
+	.large-nav {
+		top: -83px;
+	}
+	
+	.large-nav a:hover {
+	color: blue;
+	}
+	
+	.pic-container {
+		height: 252px;
+		overflow: hidden;
+	}
+
+	.background-img {
+		background-image: url("../images/comic-book-faces.jpg");
+		height: 400px;
+		background-size: cover;
+	}
+
+	.background-img-about {
+		background-image: url("https://barkpost.com/wp-content/uploads/2015/06/dog-family-reunion-2.jpg");
+		background-size: cover;
+		height: 266px;
+	}
+	
+	form {
+		max-width: 557px;
+	}
+
+	.fa-times {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 760px) {
+
+	.products {
+		display: flex;
+	}
+
+   	.pic-container {
+		height: 366px;
+		overflow: hidden;
+	}
+
+	.background-img {
+		background-image: url("../images/comic-book-faces.jpg");
+		height: 400px;
+		background-size: cover;
+	}
+
+	.background-img-about {
+		height: 400px;
+		background-size: cover;
+	}
+
+	form {
+		max-width: 557px;
+	}
+
+	.large-nav a:hover {
+		color: blue;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
